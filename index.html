@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <div id="container">
+    <h1 id="título">Encuesta sobre Perfumería</h1>
+    <p id="descripción">¿Cuáles son tus gustos sobre fragancias?</p>
+    <form id="survey-form ">
+      <p>
+        <label for="nombre" id="label_nombre"><b>Nombre:</b></label>
+        <input id="nombre" type="text" maxlength="40" placeholder="Juan Pablo Torres Rios">
+      </p>
+      <p>
+        <label for="edad" id="label_edad"><b>Edad (opcional):</b></label>
+        <input id="edad" type="number" min="15" max="85" placeholder="Nací en 1988">
+      </p>
+      <p>
+        <label for="familia" id="label_familia"><b>¿Cuál es tu familia olfativa preferida?</b></label>
+        <select id="familia">
+          <option value="1">1. Cítrica o Hespéride</option>
+          <option value="2">2. Floral</option>
+          <option value="3" selected>3. Amaderada</option>
+          <option value="4">4. Fougère</option>
+          <option value="5">5. Chipre</option>
+          <option value="6">6. Gourmand</option>
+        </select>
+      </p>
+      <fieldset>
+        <legend><b>¿Qué tipos de fragancias prefieres?</b></legend>
+        <label for="opciones" id="label_femenina">
+          <input title="opcion1" name="tipo_fragancia" value="1" id="femenina" type="radio">Femenina
+        </label>
+        <label for="opciones" id="label_masculina">
+          <input title="opcion2" name="tipo_fragancia" value="2" id="masculina" type="radio" checked>Masculina
+        </label>
+        <label for="opciones" id="label_unixes">
+          <input title="opcion3" name="tipo_fragancia" value="3" id="unixes" type="radio">Unixes
+        </label>
+      </fieldset>
+      <p>
+      <fieldset>
+        <legend> <b>¿Qué concentraciones utilizas de manera habitual?</b> ( selecciona todos los
+          que quieras )</legend>
+        <ul class="lista">
+          <li><label for="opciones">
+              <input id="ef" type="checkbox" value="1"><b>Eau Fraîche (EF):</b>
+              1-3% duración corta, ideal para climas cálidos.
+            </label></li>
+          <li><label>
+              <input id="edc" type="checkbox" value="2" checked><b>Eau de Cologne
+                (EDC):</b> 3-5%, duración moderada, ideal para el uso diario.
+            </label></li>
+          <li><label>
+              <input id="edt" type="checkbox" value="3"> <b>Eau de toliette (EDT):</b> 4-8% duración media, versátil,
+              para
+              diferentes
+              ocasiones.
+            </label></li>
+          <li><label>
+              <input id="edp" type="checkbox" value="4"> <b>Eau de parfum (EDP):</b> 8-15% duración prolongada, para la
+              noche o
+              eventos.
+            </label></li>
+          <li><label>
+              <input id="parfum" type="checkbox" value="5"> <b>Parfum (P) o Extrait de Parfum:</b> 15-30%, duración muy
+              prolongada.
+            </label></li>
+        </ul>
+      </fieldset>
+      </p>
+      <p>
+        <label for="textArea"><b>Nombra tres de tus perfumes preferidos</b></label>
+        <textarea id="textArea" rows="1" cols="100"
+          placeholder="Zero plus (Diesel), 212 (Carolina Herrera), Blanc (Lacoste)"></textarea>
+      </p>
+      <button type="submit">Enviar</button>
+
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Tagesschrift&display=swap');
+
+body {
+  background-image: url(../img/3172233.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#container {
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+h1 {
+  font-family: "Tagesschrift", system-ui;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+  color: #013220;
+  text-shadow: 0px 0px 10px #8A9A5B;
+}
+
+body>div>p {
+  text-align: center;
+  color: black;
+}
+
+form {
+  background-color: #7BA05B;
+  opacity: 0.8;
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+input,
+label {
+  font-family: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lista {
+  line-height: 2;
+}
+
+label[for="textArea"] {
+  display: block;
+}
+
+button {
+  display: block;
+  background-color: transparent;
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  margin: 0 auto;
+  border: 2px solid #013220;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8A9A5B;
+}
+
+textarea {
+  margin-top: 10px;
+  padding: 8px;
+  border: 2px solid #568203;
+  width: 95%;
+}
+
+#nombre,
+#edad,
+#familia {
+  display: block;
+  width: 96%;
+  height: 30px;
+  margin-top: 5px;
+  border: 2px solid #568203;
+
+}
+
+#familia {
+  margin: 0;
+  margin-top: 5px;
+}
+
+fieldset {
+  border: none;
+  width: 94%;
+}
+
+fieldset>label {
+  display: block;
+  margin-top: 5px;
+}
